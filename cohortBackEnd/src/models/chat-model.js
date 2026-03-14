@@ -4,6 +4,24 @@ const chatSchema = new mongoose.Schema(
   {
     isGroup: { type: Boolean, default: false },
 
+    kind: {
+      type: String,
+      enum: ['direct', 'group', 'community-announcement'],
+      default: 'direct'
+    },
+
+    group: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Group',
+      default: null
+    },
+
+    community: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Community',
+      default: null
+    },
+
     name: {
       type: String,
       required: function () {

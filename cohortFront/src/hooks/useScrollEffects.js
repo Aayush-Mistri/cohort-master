@@ -7,35 +7,45 @@ import { useEffect, useRef } from 'react';
  */
 export const useScrollAnimation = (options = {}) => {
   const defaultOptions = {
-    threshold: 0.15,
-    rootMargin: '0px 0px -100px 0px',
+    threshold: 0.05,
+    rootMargin: '0px 0px -30px 0px',
     ...options
   };
 
   useEffect(() => {
+    let observer;
+
+    const revealElement = (el) => {
+      const delay = el.dataset.delay || 0;
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, parseInt(delay));
+    };
+
     const observerCallback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const delay = entry.target.dataset.delay || 0;
-          setTimeout(() => {
-            entry.target.classList.add('visible');
-          }, parseInt(delay));
+          revealElement(entry.target);
           observer.unobserve(entry.target);
         }
       });
     };
 
-    const observer = new IntersectionObserver(observerCallback, defaultOptions);
+    observer = new IntersectionObserver(observerCallback, defaultOptions);
 
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
-    animatedElements.forEach((el) => {
-      observer.observe(el);
-    });
+    animatedElements.forEach((el) => observer.observe(el));
+
+    // Safety fallback: after 3s reveal anything still invisible
+    const fallbackTimer = setTimeout(() => {
+      document.querySelectorAll('.animate-on-scroll:not(.visible)').forEach((el) => {
+        revealElement(el);
+      });
+    }, 3000);
 
     return () => {
-      animatedElements.forEach((el) => {
-        observer.unobserve(el);
-      });
+      animatedElements.forEach((el) => observer.unobserve(el));
+      clearTimeout(fallbackTimer);
     };
   }, []);
 };

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const communitySchema = new mongoose.Schema({
+const groupSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -11,15 +11,11 @@ const communitySchema = new mongoose.Schema({
         type: String,
         default: ''
     },
-    category: {
-        type: String,
-        default: 'general'
-    },
     coverImage: {
         type: String,
         default: ''
     },
-    rules: {
+    profileImage: {
         type: String,
         default: ''
     },
@@ -40,27 +36,33 @@ const communitySchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     }],
-    groups: [{
+    chat: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Group'
-    }],
+        ref: 'Chat',
+        default: null
+    },
+    community: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Community',
+        default: null
+    },
     inviteCode: {
         type: String,
         unique: true,
         sparse: true
-    },
-    announcementChat: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Chat',
-        default: null
     },
     joinRequests: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     }],
     settings: {
+        adminsOnly: { type: Boolean, default: false },
         requireApproval: { type: Boolean, default: false }
-    }
+    },
+    pinnedMessages: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Message'
+    }]
 }, { timestamps: true });
 
-export default mongoose.model('Community', communitySchema);
+export default mongoose.model('Group', groupSchema);

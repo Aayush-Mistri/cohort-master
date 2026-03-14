@@ -116,4 +116,34 @@ export const offMessagesRead = () => {
     }
 };
 
+export const emitMessageReaction = (chatId, messageId, reactions) => {
+    if (socket) {
+        socket.emit('message-reaction', { chatId, messageId, reactions });
+    }
+};
+
+export const onMessageReaction = (callback) => {
+    if (socket) {
+        socket.on('message-reaction', callback);
+    }
+};
+
+export const offMessageReaction = () => {
+    if (socket) {
+        socket.off('message-reaction');
+    }
+};
+
+export const onNotification = (callback) => {
+    if (socket) {
+        socket.on('notification', callback);
+    }
+};
+
+export const offNotification = () => {
+    if (socket) {
+        socket.off('notification');
+    }
+};
+
 export default socket;

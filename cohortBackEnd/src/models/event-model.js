@@ -18,9 +18,21 @@ const eventSchema = new mongoose.Schema({
         type: String,
         default: 'Online'
     },
+    coverImage: {
+        type: String,
+        default: ''
+    },
+    maxAttendees: {
+        type: Number,
+        default: 0 // 0 means unlimited
+    },
     community: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Community'
+    },
+    group: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Group'
     },
     creator: {
         type: mongoose.Schema.Types.ObjectId,

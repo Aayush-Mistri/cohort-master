@@ -65,16 +65,73 @@ export const getMessages = async (chatId) => {
 };
 
 // Send a message
-export const sendMessage = async (chatId, content) => {
+export const sendMessage = async (chatId, payload) => {
     try {
+        const body = typeof payload === 'string'
+            ? { chatId, content: payload }
+            : { chatId, ...(payload || {}) };
         const response = await axios.post(
             `${API_URL}/message`,
-            { chatId, content },
+            body,
             { headers: getAuthHeader() }
         );
         return response.data;
     } catch (error) {
         console.error('Error sending message:', error);
+        throw error;
+    }
+};
+
+// Schedule a message (one-time or recurring)
+export const scheduleMessage = async (payload) => {
+    try {
+        const response = await axios.post(
+            `${API_URL}/message/schedule`,
+            payload,
+            { headers: getAuthHeader() }
+        );
+        return response.data;
+    } catch (error) {
+        console.error('Error scheduling message:', error);
+        throw error;
+    }
+};
+
+export const getScheduledMessages = async (chatId) => {
+    try {
+        const response = await axios.get(`${API_URL}/message/schedule/${chatId}`, {
+            headers: getAuthHeader()
+        });
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching scheduled messages:', error);
+        throw error;
+    }
+};
+
+export const cancelScheduledMessage = async (scheduleId) => {
+    try {
+        const response = await axios.delete(`${API_URL}/message/schedule/${scheduleId}`, {
+            headers: getAuthHeader()
+        });
+        return response.data;
+    } catch (error) {
+        console.error('Error canceling scheduled message:', error);
+        throw error;
+    }
+};
+
+// Toggle reaction on a message
+export const toggleMessageReaction = async (messageId, emoji) => {
+    try {
+        const response = await axios.post(
+            `${API_URL}/message/${messageId}/reactions`,
+            { emoji },
+            { headers: getAuthHeader() }
+        );
+        return response.data;
+    } catch (error) {
+        console.error('Error toggling reaction:', error);
         throw error;
     }
 };
@@ -205,6 +262,59 @@ export const uploadFile = async (file) => {
         return response.data;
     } catch (error) {
         console.error('Error uploading file:', error);
+        throw error;
+    }
+};
+
+export const editMessage = async (messageId, content) => {
+    try {
+        const response = await axios.put(
+            `${API_URL}/message/${messageId}`,
+            { content },
+            { headers: getAuthHeader() }
+        );
+        return response.data;
+    } catch (error) {
+        console.error('Error editing message:', error);
+        throw error;
+    }
+};
+
+export const deleteMessage = async (messageId) => {
+    try {
+        const response = await axios.delete(`${API_URL}/message/${messageId}`, {
+            headers: getAuthHeader()
+        });
+        return response.data;
+    } catch (error) {
+        console.error('Error deleting message:', error);
+        throw error;
+    }
+};
+
+export const votePoll = async (messageId, optionIndex) => {
+    try {
+        const response = await axios.post(
+            `${API_URL}/message/${messageId}/poll/vote`,
+            { optionIndex },
+            { headers: getAuthHeader() }
+        );
+        return response.data;
+    } catch (error) {
+        console.error('Error voting on poll:', error);
+        throw error;
+    }
+};
+
+export const searchMessages = async (chatId, q) => {
+    try {
+        const response = await axios.get(`${API_URL}/message/search`, {
+            params: { chatId, q },
+            headers: getAuthHeader()
+        });
+        return response.data;
+    } catch (error) {
+        console.error('Error searching messages:', error);
         throw error;
     }
 };
