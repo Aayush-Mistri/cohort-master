@@ -305,17 +305,17 @@ const LandingPage = () => {
                 <span className="footer-logo">cohort</span>
                 <p className="footer-tagline">Engage, communicate, and grow communities with clarity and intelligence.</p>
                 <div className="footer-socials">
-                  <a href="#" aria-label="Twitter" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>
+                  <a href="https://x.com/aayushhhere" aria-label="Twitter" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-2 .9-3.3 1.15A4.52 4.52 0 0 0 11.5 6c0 .35.04.7.11 1.03A12.8 12.8 0 0 1 1.64 2.16s-4 9 5 13A13 13 0 0 1 0 17c0 4 4.5 6 9 6 8 0 14-5.3 14-12 0-.18 0-.35-.02-.52A10 10 0 0 0 23 3z"/>
                     </svg>
                   </a>
-                  <a href="#" aria-label="GitHub" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>
+                  <a href="https://github.com/Aayush-Mistri/cohort-master" aria-label="GitHub" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
                     </svg>
                   </a>
-                  <a href="#" aria-label="LinkedIn" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>
+                  <a href="https://www.linkedin.com/in/aayush-mistri-9ba79334a/" aria-label="LinkedIn" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
                     </svg>
@@ -324,33 +324,12 @@ const LandingPage = () => {
               </div>
 
               {/* Links */}
-              <div className="footer-col">
-                <span className="footer-col__head">Product</span>
-                <a href="#about" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>About</a>
-                <a href="#" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Features</a>
-                <a href="/signup" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Get started</a>
-              </div>
-              <div className="footer-col">
-                <span className="footer-col__head">Company</span>
-                <a href="#" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Careers</a>
-                <a href="#" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Press</a>
-                <a href="#contact" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Contact</a>
-              </div>
-              <div className="footer-col">
-                <span className="footer-col__head">Resources</span>
-                <a href="#" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Docs</a>
-                <a href="#" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Security</a>
-                <a href="#" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Support</a>
-              </div>
+              
             </div>
 
             <div className="footer-bottom">
               <span>© 2026 Cohort. All rights reserved.</span>
-              <div className="footer-bottom__links">
-                <a href="#" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Privacy</a>
-                <a href="#" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Terms</a>
-                <a href="#" onMouseEnter={enlargeCursor} onMouseLeave={resetCursor}>Cookies</a>
-              </div>
+              
             </div>
           </div>
         </footer>
