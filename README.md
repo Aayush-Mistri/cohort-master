@@ -48,12 +48,9 @@ cd cohort-master
 ```bash
 cd cohortfront
 npm install
-```
-
-```bash
+cd ..
 cd cohortbackend
 npm install
-```
 
 ### Configure Environment Variables
 
