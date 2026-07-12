@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cohort STQA PPT Sequence</title>
+  <style>
+    body{margin:0;background:#dde3ec;font-family:Segoe UI,Arial,sans-serif;color:#182235}
+    .slide{width:297mm;min-height:210mm;margin:10px auto;background:#fff;padding:14mm;box-sizing:border-box;position:relative;page-break-after:always;box-shadow:0 8px 28px rgba(0,0,0,.12)}
+    .slide:last-child{page-break-after:auto}
+    h1,h2,h3,p,li,table{margin:0} h1{font-size:30px} h2{font-size:24px;margin-bottom:10px} h3{font-size:15px;margin-bottom:6px}
+    p,li,td,th{font-size:14px;line-height:1.55} ul{padding-left:20px;margin:0}
+    .tag{display:inline-block;background:#123f7d;color:#fff;border-radius:999px;padding:7px 12px;font-size:10px;text-transform:uppercase;letter-spacing:1.4px;font-weight:700}
+    .header{display:flex;justify-content:space-between;margin-bottom:10px}.lead{font-size:15px;color:#566274}
+    .grid2,.grid3{display:grid;gap:12px}.grid2{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:repeat(3,1fr)}
+    .card{border:1px solid #cad5e4;border-radius:14px;padding:12px;background:#fbfcfe}
+    .tbl{width:100%;border-collapse:collapse}.tbl th,.tbl td{border-bottom:1px solid #d7e0ed;padding:8px 6px;text-align:left;vertical-align:top}.tbl th{background:#eef4fb;font-size:11px;text-transform:uppercase;letter-spacing:1px}
+    .diagram{border:1px solid #cad5e4;border-radius:14px;padding:10px;background:#fbfcfe}.diagram pre{margin:0;font:13px/1.35 Consolas,monospace;white-space:pre-wrap}
+    .footer{position:absolute;left:14mm;right:14mm;bottom:7mm;border-top:1px solid #cad5e4;padding-top:5px;display:flex;justify-content:space-between;font-size:11px;color:#566274}
+    @media print{body{background:#fff}.slide{margin:0;box-shadow:none}}
+  </style>
+</head>
+<body>
+  <section class="slide"><div class="header"><span class="tag">STQA PPT Sequence</span><span class="tag">Slide 1</span></div><h1>Cohort</h1><p class="lead">Real-Time Social Communication Platform with Communities, Events, Updates, and AI Assistance</p><div style="height:12px"></div><div class="grid2"><div class="card"><h3>Student Info</h3><p>[Student Name]</p><p>[Enrollment Number]</p><p>[Branch / Semester]</p></div><div class="card"><h3>Guide Info</h3><p>[Guide Name]</p><p>[Department Name]</p><p>[College Name]</p></div></div><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 1</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">Project Profile</span><span class="tag">Slide 2</span></div><h2>Project Profile</h2><div class="grid3"><div class="card"><h3>Objective</h3><p>Single platform for messaging, communities, events, updates, and AI support.</p></div><div class="card"><h3>Type</h3><p>Full-stack realtime web application.</p></div><div class="card"><h3>Users</h3><p>Students and general communication-focused users.</p></div></div><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 2</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">Existing System</span><span class="tag">Slide 3</span></div><h2>Existing System</h2><div class="grid2"><div class="card"><ul><li>Fragmented apps for chat and coordination</li><li>Limited realtime support in basic systems</li><li>No AI assistance in most existing models</li></ul></div><div class="card"><ul><li>Poor social continuity</li><li>Minimal community and event linkage</li><li>Weak personalization and translation support</li></ul></div></div><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 3</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">Proposed System</span><span class="tag">Slide 4</span></div><h2>Proposed System</h2><div class="card"><p>Cohort integrates direct chat, group chat, communities, events, updates, and AI-assisted interaction in one modular platform.</p></div><div style="height:12px"></div><div class="grid3"><div class="card"><h3>Realtime</h3><p>Typing, read receipts, online status</p></div><div class="card"><h3>Social</h3><p>Contacts, communities, groups, events</p></div><div class="card"><h3>AI</h3><p>Chat and translation assistance</p></div></div><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 4</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">Tools and Technology</span><span class="tag">Slide 5</span></div><h2>Tools and Technology</h2><table class="tbl"><tr><th>Area</th><th>Technology</th><th>Usage</th></tr><tr><td>Frontend</td><td>React, Vite</td><td>UI and routing</td></tr><tr><td>Backend</td><td>Node.js, Express</td><td>REST APIs</td></tr><tr><td>Realtime</td><td>Socket.IO</td><td>Live communication</td></tr><tr><td>Database</td><td>MongoDB, Mongoose</td><td>Persistence</td></tr><tr><td>Security</td><td>JWT, bcryptjs</td><td>Auth and hashing</td></tr><tr><td>AI</td><td>Gemini API</td><td>Assistant and translation</td></tr></table><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 5</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">System Flow</span><span class="tag">Slide 6</span></div><h2>System Flow Diagram</h2><div class="diagram"><pre>User -> React Frontend
+Frontend -> Express Backend -> MongoDB
+Frontend -> Socket.IO Server
+Backend -> Gemini API
+
+The user interacts with the frontend, the backend processes requests,
+MongoDB stores persistent records, Socket.IO handles live updates,
+and Gemini powers AI responses.</pre></div><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 6</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">UML</span><span class="tag">Slide 7</span></div><h2>UML Diagram Overview</h2><div class="grid2"><div class="card"><h3>Use Cases</h3><ul><li>Register / Login</li><li>Manage profile</li><li>Chat and collaborate</li><li>Join communities</li><li>Use AI assistant</li></ul></div><div class="card"><h3>Diagram Set</h3><ul><li>Use Case Diagram</li><li>Class Diagram</li><li>Activity Diagram</li><li>Sequence Diagram / DFD</li></ul></div></div><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 7</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">ER Diagram</span><span class="tag">Slide 8</span></div><h2>Class / ER Diagram</h2><div class="diagram"><pre>Main Entities:
+User, Chat, Message, Community, Group, Event, Update
+
+Key Relations:
+User -> Chat -> Message
+User -> Community -> Group
+User -> Event
+User -> Update</pre></div><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 8</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">Data Dictionary</span><span class="tag">Slide 9</span></div><h2>Data Dictionary</h2><table class="tbl"><tr><th>Entity</th><th>Fields</th><th>Purpose</th></tr><tr><td>User</td><td>name, username, email, friends</td><td>Identity and social graph</td></tr><tr><td>Chat</td><td>participants, kind, lastMessage</td><td>Conversation metadata</td></tr><tr><td>Message</td><td>content, type, reactions, readBy</td><td>Realtime communication record</td></tr><tr><td>Community / Group</td><td>members, admins, settings</td><td>Structured collaboration</td></tr><tr><td>Event / Update</td><td>date, visibility, expiresAt</td><td>Scheduling and short-lived sharing</td></tr></table><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 9</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">Input Screens</span><span class="tag">Slide 10</span></div><h2>Input Screen Designs</h2><div class="grid3"><div class="card"><h3>Login</h3><p>Secure authentication screen.</p></div><div class="card"><h3>Dashboard</h3><p>Navigation across major modules.</p></div><div class="card"><h3>Chat</h3><p>Realtime communication view.</p></div><div class="card"><h3>Community</h3><p>Community and group management.</p></div><div class="card"><h3>Events</h3><p>Event creation and RSVP flow.</p></div><div class="card"><h3>Settings</h3><p>Profile and preferences view.</p></div></div><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 10</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">Conclusion</span><span class="tag">Slide 11</span></div><h2>Conclusion</h2><div class="card"><ul><li>Cohort demonstrates a modern full-stack realtime platform.</li><li>The project integrates communication, communities, events, updates, and AI.</li><li>It provides practical learning across UI, backend, database, and realtime engineering.</li></ul></div><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 11</span></div></section>
+  <section class="slide"><div class="header"><span class="tag">Bibliography</span><span class="tag">Slide 12</span></div><h2>Bibliography</h2><div class="card"><ul><li>React Documentation</li><li>Vite Documentation</li><li>Express.js Documentation</li><li>Socket.IO Documentation</li><li>MongoDB and Mongoose Documentation</li><li>Gemini API references</li></ul></div><div class="footer"><span>Cohort PPT Sequence</span><span>Slide 12</span></div></section>
+</body>
+</html>

@@ -1,0 +1,23 @@
+    14/12/25
+        - Basic design with components is ready in frontend
+        - Cluster and DB connection successfull in Backend
+
+    16/12/25
+        - Registration and login is done working and tested
+        ~ have added a message and chat models as well as routes need to test(Architecture is unprofessional so have to update it and refer something)
+
+    20/12/25
+        - Authentication , message fetching , message sending 1-1 and group aswell working 
+            tested properly
+        - Initialized socket.io for realtime messaging 
+        - Phase-1 of backend is completed with all basic functionallities
+        
+
+
+    1/1/26
+        overall made homepage , signup , login , in frontend
+        In backend Authentication , chat are ready and tested yet socket io is yet to implement
+        
+
+
+    Made a heavy landing page , took so much time but was worth it

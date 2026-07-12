@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cohort STQA Report</title>
+  <style>
+    body{margin:0;background:#dde3ec;font-family:Segoe UI,Arial,sans-serif;color:#182235}
+    .page{width:210mm;min-height:297mm;margin:10px auto;background:#fff;padding:16mm 15mm 15mm;box-sizing:border-box;position:relative;page-break-after:always;box-shadow:0 8px 28px rgba(0,0,0,.12)}
+    .page:last-child{page-break-after:auto}
+    h1,h2,h3,p,li,table{margin:0} h1{font-size:27px;line-height:1.2} h2{font-size:21px;margin-bottom:10px} h3{font-size:14px;margin-bottom:6px}
+    p,li,td,th{font-size:12px;line-height:1.55} ul,ol{padding-left:18px;margin:0}
+    .tag{display:inline-block;background:#123f7d;color:#fff;border-radius:999px;padding:6px 12px;font-size:10px;text-transform:uppercase;letter-spacing:1.4px;font-weight:700}
+    .lead{margin-top:10px;color:#566274;font-size:13px}
+    .grid2,.grid3{display:grid;gap:10px}.grid2{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:repeat(3,1fr)}
+    .card,.placeholder,.note,.diagram{border:1px solid #cad5e4;border-radius:12px;padding:10px;background:#fbfcfe}
+    .placeholder{min-height:220mm;display:flex;align-items:center;justify-content:center;text-align:center;border:2px dashed #9cb0cb;background:#f7faff}
+    .muted{color:#566274}.label{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#566274;margin-bottom:3px}
+    .toc td,.toc th,.dict td,.dict th{border-bottom:1px solid #d7e0ed;padding:6px 4px;text-align:left;vertical-align:top}
+    .toc,.dict{width:100%;border-collapse:collapse}.toc th,.dict th{background:#eef4fb;font-size:10px;text-transform:uppercase;letter-spacing:1px}
+    .diagram pre{margin:0;font:11px/1.35 Consolas,monospace;white-space:pre-wrap}
+    .screen{height:110px;border:1px solid #c9d5e4;border-radius:12px;background:#fff;position:relative;overflow:hidden;margin:8px 0}
+    .screen:before{content:"";position:absolute;left:0;right:0;top:0;height:18px;background:linear-gradient(90deg,#123f7d,#1f67c6)}
+    .screen:after{content:"";position:absolute;left:12px;right:12px;top:32px;bottom:12px;border-radius:10px;background:#eef4fb}
+    .footer{position:absolute;left:15mm;right:15mm;bottom:8mm;border-top:1px solid #cad5e4;padding-top:5px;display:flex;justify-content:space-between;font-size:10px;color:#566274}
+    .sp8{height:8px}.sp12{height:12px}
+    @media print{body{background:#fff}.page{margin:0;box-shadow:none}}
+  </style>
+</head>
+<body>
+  <section class="page">
+    <div class="tag">STQA Internship Project Report</div>
+    <h1 style="margin-top:18px">Cohort: Real-Time Social Communication Platform with AI Assistance</h1>
+    <p class="lead">Structured as per the STQA flow shared by the student. Replace the bracketed fields with final official details where required.</p>
+    <div class="sp12"></div>
+    <div class="grid2">
+      <div class="card"><div class="label">Student Name</div><p><strong>[Student Name]</strong></p></div>
+      <div class="card"><div class="label">Enrollment Number</div><p><strong>[Enrollment Number]</strong></p></div>
+      <div class="card"><div class="label">Guide Info</div><p><strong>[Guide Name]</strong></p></div>
+      <div class="card"><div class="label">Submitted To</div><p><strong>[HOD / Department / College Name]</strong></p></div>
+      <div class="card"><div class="label">Company / Organization</div><p><strong>[Company Name]</strong></p></div>
+      <div class="card"><div class="label">Academic Year</div><p><strong>2025-2026</strong></p></div>
+    </div>
+    <div class="sp12"></div>
+    <div class="note">This report is based on the actual Cohort codebase: React + Vite frontend, Express + Socket.IO backend, MongoDB database, JWT authentication, and Gemini-powered AI assistance.</div>
+    <div class="footer"><span>Cohort Project Report</span><span>Page 1</span></div>
+  </section>
+
+  <section class="page"><h2>College Certificate</h2><div class="placeholder"><div><h3>Reserved for Official College Certificate</h3><p class="muted">Attach the signed college certificate on this page.</p></div></div><div class="footer"><span>Official Copy Placeholder</span><span>Page 2</span></div></section>
+  <section class="page"><h2>Log Sheet</h2><div class="placeholder"><div><h3>Reserved for Log Sheet</h3><p class="muted">Insert the approved internship log sheet on this page.</p></div></div><div class="footer"><span>Official Copy Placeholder</span><span>Page 3</span></div></section>
+  <section class="page"><h2>Company Certificate</h2><div class="placeholder"><div><h3>Reserved for Company Certificate</h3><p class="muted">Attach the company internship / completion certificate on this page.</p></div></div><div class="footer"><span>Official Copy Placeholder</span><span>Page 4</span></div></section>
+
+  <section class="page">
+    <h2>Acknowledgement</h2>
+    <p>I express my sincere gratitude to <strong>[College Name]</strong>, my guide <strong>[Guide Name]</strong>, and the Department of <strong>[Department Name]</strong> for their constant support and guidance during the internship and project work.</p>
+    <div class="sp8"></div>
+    <p>I am also thankful to <strong>[Company Name]</strong> for providing the opportunity to work on a practical full-stack software project. The experience helped me understand frontend-backend integration, realtime communication, database modeling, and software documentation in a professional context.</p>
+    <div class="sp8"></div>
+    <p>Finally, I thank my peers and family members for their encouragement and support during the successful completion of this project and report.</p>
+    <div class="footer"><span>Acknowledgement</span><span>Page 5</span></div>
+  </section>
+
+  <section class="page">
+    <h2>Index</h2>
+    <table class="toc">
+      <tr><th>Sr. No.</th><th>Contents</th><th>Page No.</th></tr>
+      <tr><td>1</td><td>Project Title, Guide Info, Student Info, Submitted To</td><td>1</td></tr>
+      <tr><td>2</td><td>College Certificate</td><td>2</td></tr>
+      <tr><td>3</td><td>Log Sheet</td><td>3</td></tr>
+      <tr><td>4</td><td>Company Certificate</td><td>4</td></tr>
+      <tr><td>5</td><td>Acknowledgement</td><td>5</td></tr>
+      <tr><td>6</td><td>Index</td><td>6</td></tr>
+      <tr><td>7</td><td>Company Profile</td><td>7</td></tr>
+      <tr><td>8</td><td>Project Profile</td><td>8</td></tr>
+      <tr><td>9</td><td>Existing System</td><td>9</td></tr>
+      <tr><td>10</td><td>Proposed System</td><td>10</td></tr>
+      <tr><td>11</td><td>Tools and Technology</td><td>11</td></tr>
+      <tr><td>12</td><td>System Flow Diagram</td><td>12</td></tr>
+      <tr><td>13</td><td>Use Case, Class, Activity, Sequence / DFD</td><td>13-16</td></tr>
+      <tr><td>14</td><td>Class / ER Diagram</td><td>17</td></tr>
+      <tr><td>15</td><td>Data Dictionary</td><td>18-19</td></tr>
+      <tr><td>16</td><td>Input Screen Designs</td><td>20</td></tr>
+      <tr><td>17</td><td>Conclusion</td><td>21</td></tr>
+      <tr><td>18</td><td>Bibliography</td><td>22</td></tr>
+    </table>
+    <div class="footer"><span>Index</span><span>Page 6</span></div>
+  </section>
+
+  <section class="page">
+    <h2>Company Profile</h2>
+    <div class="grid2">
+      <div class="card"><div class="label">Company Name</div><p>[Company Name]</p></div>
+      <div class="card"><div class="label">Work Domain</div><p>Software development, web application engineering, and product-oriented implementation.</p></div>
+      <div class="card"><div class="label">Internship Exposure</div><p>Frontend UI work, backend route development, realtime logic, database modeling, and debugging.</p></div>
+      <div class="card"><div class="label">Professional Relevance</div><p>Hands-on exposure to current full-stack development tools and real project workflows.</p></div>
+    </div>
+    <div class="sp12"></div>
+    <div class="note">If the college requires a detailed official company profile, this page can be updated with the exact organization history, services, and contact details provided by the company.</div>
+    <div class="footer"><span>Company Profile</span><span>Page 7</span></div>
+  </section>
+
+  <section class="page">
+    <h2>Project Profile</h2>
+    <div class="grid2">
+      <div class="card"><div class="label">Project Title</div><p><strong>Cohort</strong> - Real-Time Social Communication Platform</p></div>
+      <div class="card"><div class="label">Project Type</div><p>Full-stack web application</p></div>
+      <div class="card"><div class="label">Objective</div><p>To create a unified platform for messaging, communities, events, updates, and AI interaction.</p></div>
+      <div class="card"><div class="label">Target Users</div><p>Students and general users who need social communication and collaboration features in one app.</p></div>
+    </div>
+    <div class="sp12"></div>
+    <div class="card">
+      <h3>Main Modules</h3>
+      <ul>
+        <li>Authentication and onboarding</li>
+        <li>Direct and group chat</li>
+        <li>Communities and groups</li>
+        <li>Events and expiring updates</li>
+        <li>AI assistant and translation</li>
+      </ul>
+    </div>
+    <div class="footer"><span>Project Profile</span><span>Page 8</span></div>
+  </section>
+
+  <section class="page">
+    <h2>Existing System</h2>
+    <div class="grid2">
+      <div class="card"><h3>Observed Limitations</h3><ul><li>Users often depend on different apps for chat, updates, and event coordination.</li><li>Traditional academic messaging projects lack advanced realtime behavior.</li><li>AI support and translation are usually absent.</li></ul></div>
+      <div class="card"><h3>Need for Improvement</h3><ul><li>Single platform for communication and coordination.</li><li>Better social discovery and group management.</li><li>Modern user experience with live updates and richer interaction.</li></ul></div>
+    </div>
+    <div class="footer"><span>Existing System</span><span>Page 9</span></div>
+  </section>
+
+  <section class="page">
+    <h2>Proposed System</h2>
+    <p>Cohort is proposed as an integrated communication platform where the same user can manage contacts, chat in realtime, participate in communities, create events, post updates, and use AI assistance without leaving the application ecosystem.</p>
+    <div class="sp12"></div>
+    <div class="grid3">
+      <div class="card"><h3>Realtime</h3><p>Typing indicators, read receipts, online status, and socket-based updates.</p></div>
+      <div class="card"><h3>Social</h3><p>Friends, communities, groups, event participation, and personal updates.</p></div>
+      <div class="card"><h3>Intelligent</h3><p>AI chat and multilingual translation for better accessibility.</p></div>
+    </div>
+    <div class="sp12"></div>
+    <div class="note">The proposed system improves both usability and technical structure by separating UI, APIs, realtime events, and data storage.</div>
+    <div class="footer"><span>Proposed System</span><span>Page 10</span></div>
+  </section>
+
+  <section class="page">
+    <h2>Tools and Technology</h2>
+    <table class="dict">
+      <tr><th>Layer</th><th>Technology</th><th>Purpose</th></tr>
+      <tr><td>Frontend</td><td>React 19, Vite, React Router DOM</td><td>Responsive SPA interface and route management</td></tr>
+      <tr><td>Client Utilities</td><td>Axios, Socket.IO Client, Lucide React, Emoji Picker, Three.js</td><td>API calls, realtime events, icons, emoji support, and UI visuals</td></tr>
+      <tr><td>Backend</td><td>Node.js, Express 5</td><td>REST APIs, middleware handling, and server logic</td></tr>
+      <tr><td>Realtime</td><td>Socket.IO</td><td>Live message delivery, typing, online status, read receipts, call signaling</td></tr>
+      <tr><td>Database</td><td>MongoDB Atlas, Mongoose</td><td>Schema-based document persistence</td></tr>
+      <tr><td>Security</td><td>JWT, bcryptjs</td><td>Authentication and password hashing</td></tr>
+      <tr><td>Media</td><td>Multer</td><td>Upload handling for profile and media assets</td></tr>
+      <tr><td>AI</td><td>Gemini API</td><td>AI chat and translation support</td></tr>
+    </table>
+    <div class="footer"><span>Tools and Technology</span><span>Page 11</span></div>
+  </section>
+
+  <section class="page"><h2>System Flow Diagram</h2><div class="diagram"><pre>User
+  |
+  v
+React Frontend
+  |---- REST APIs ----> Express Backend ----> MongoDB Atlas
+  |
+  |---- Socket.IO ----> Realtime Server
+  |
+  |---- AI Request ---> Gemini API
+
+Flow Summary:
+1. User performs action in frontend.
+2. Frontend sends API requests to backend.
+3. Backend stores / fetches data from MongoDB.
+4. Realtime events are delivered through Socket.IO rooms.
+5. AI requests are forwarded to Gemini and returned to UI.</pre></div><div class="footer"><span>System Flow Diagram</span><span>Page 12</span></div></section>
+
+  <section class="page"><h2>UML Diagram - Use Case Diagram</h2><div class="diagram"><pre>Actors:
+- User
+- Admin
+
+Primary Use Cases:
+- Register / Login
+- Manage Profile
+- Search Users / Add Contacts
+- Start Direct Chat / Group Chat
+- Send Message / React / Reply / Read
+- Join Community / Manage Group
+- Create Event / RSVP Event
+- Post Update
+- Use AI Assistant / Translate Messages
+
+Admin-Specific:
+- Approve join requests
+- Moderate community / group settings
+- Manage announcement or admin-only spaces</pre></div><div class="footer"><span>Use Case Diagram</span><span>Page 13</span></div></section>
+
+  <section class="page"><h2>UML Diagram - Class Diagram</h2><div class="diagram"><pre>User
+- name, username, email, password
+- profilePic, bio, interests
+- friends[], incomingFriendRequests[], outgoingFriendRequests[]
+
+Chat
+- isGroup, kind, participants[], admin, lastMessage
+
+Message
+- sender, chat, content, type, attachments[], readBy[], reactions[]
+
+Community
+- name, description, category, creator, admins[], members[], announcementChat
+
+Group
+- name, description, creator, admins[], members[], chat, community, settings
+
+Event / Update
+- creator or author, date or expiresAt, attendees or visibility
+
+Relations:
+User -> Chat -> Message
+User -> Community -> Group
+User -> Event
+User -> Update</pre></div><div class="footer"><span>Class Diagram</span><span>Page 14</span></div></section>
+
+  <section class="page"><h2>UML Diagram - Activity Diagram</h2><div class="diagram"><pre>Start
+  ->
+Login / Authenticate
+  ->
+Open Dashboard
+  ->
+Select Module
+  -> Chat -> Send message / read / react
+  -> Community / Group -> join / manage / approve
+  -> Event -> create / RSVP
+  -> Update -> create / view
+  -> AI -> ask / translate
+  ->
+Store / Broadcast / Display result
+  ->
+End</pre></div><div class="footer"><span>Activity Diagram</span><span>Page 15</span></div></section>
+
+  <section class="page"><h2>UML Diagram - Sequence Diagram / DFD</h2><div class="diagram"><pre>Sequence Example: Message Sending
+User -> Frontend: enter content
+Frontend -> Backend: POST /api/message
+Backend -> MongoDB: save message
+Backend -> MongoDB: update chat.lastMessage
+Backend -> Socket.IO room: emit receive-message
+Backend -> Frontend: return created message
+
+DFD Level-0
+User Inputs -> Cohort System -> Database
+User Inputs -> Cohort System -> AI Service
+User Inputs -> Cohort System -> Realtime Notifications</pre></div><div class="footer"><span>Sequence Diagram / DFD</span><span>Page 16</span></div></section>
+
+  <section class="page"><h2>Class / ER Diagram</h2><div class="diagram"><pre>Entities:
+User, Chat, Message, Community, Group, Event, Update
+
+Core Relationships:
+User 1..* -> Chat
+Chat 1..* -> Message
+User 1..* -> Message
+Community 1..* -> Group
+Community 1..* -> Member(User)
+Group 1..1 -> Chat
+User 1..* -> Event
+User 1..* -> Update
+
+This ER structure supports social relationships, realtime communication,
+community organization, and short-lived content sharing.</pre></div><div class="footer"><span>Class / ER Diagram</span><span>Page 17</span></div></section>
+
+  <section class="page">
+    <h2>Data Dictionary - Part I</h2>
+    <table class="dict">
+      <tr><th>Entity</th><th>Field</th><th>Type</th><th>Description</th></tr>
+      <tr><td>User</td><td>name</td><td>String</td><td>Display name of the user</td></tr>
+      <tr><td>User</td><td>username</td><td>String</td><td>Unique identity used for login and mentions</td></tr>
+      <tr><td>User</td><td>email</td><td>String</td><td>Unique email for authentication</td></tr>
+      <tr><td>User</td><td>friends[]</td><td>ObjectId[]</td><td>Connected contact references</td></tr>
+      <tr><td>Chat</td><td>isGroup</td><td>Boolean</td><td>Direct or group chat marker</td></tr>
+      <tr><td>Chat</td><td>kind</td><td>Enum</td><td>direct, group, or community-announcement</td></tr>
+      <tr><td>Chat</td><td>participants[]</td><td>ObjectId[]</td><td>Users in the chat</td></tr>
+      <tr><td>Message</td><td>sender</td><td>ObjectId</td><td>User who sent the message</td></tr>
+      <tr><td>Message</td><td>chat</td><td>ObjectId</td><td>Related chat room</td></tr>
+      <tr><td>Message</td><td>content</td><td>String</td><td>Message body</td></tr>
+    </table>
+    <div class="footer"><span>Data Dictionary - Part I</span><span>Page 18</span></div>
+  </section>
+
+  <section class="page">
+    <h2>Data Dictionary - Part II</h2>
+    <table class="dict">
+      <tr><th>Entity</th><th>Field</th><th>Type</th><th>Description</th></tr>
+      <tr><td>Message</td><td>attachments[]</td><td>Object[]</td><td>Metadata for uploaded files</td></tr>
+      <tr><td>Message</td><td>reactions[]</td><td>Object[]</td><td>Emoji reactions with user references</td></tr>
+      <tr><td>Community</td><td>announcementChat</td><td>ObjectId</td><td>Official community announcement channel</td></tr>
+      <tr><td>Group</td><td>settings</td><td>Object</td><td>Admin-only, invite, and approval controls</td></tr>
+      <tr><td>Event</td><td>date / endDate</td><td>Date</td><td>Event schedule</td></tr>
+      <tr><td>Event</td><td>attendees[]</td><td>ObjectId[]</td><td>Users who RSVP</td></tr>
+      <tr><td>Update</td><td>visibility</td><td>Enum</td><td>public, contacts, community, or group</td></tr>
+      <tr><td>Update</td><td>expiresAt</td><td>Date</td><td>24-hour auto-expiry timestamp</td></tr>
+    </table>
+    <div class="footer"><span>Data Dictionary - Part II</span><span>Page 19</span></div>
+  </section>
+
+  <section class="page">
+    <h2>Input Screen Designs</h2>
+    <div class="grid3">
+      <div class="card"><h3>Login Screen</h3><div class="screen"></div><p>Email/password based secure sign in.</p></div>
+      <div class="card"><h3>Signup Screen</h3><div class="screen"></div><p>Registration and onboarding information capture.</p></div>
+      <div class="card"><h3>Home Dashboard</h3><div class="screen"></div><p>Central workspace for chats, AI, communities, groups, updates, and events.</p></div>
+      <div class="card"><h3>Chat Window</h3><div class="screen"></div><p>Message list, search, scheduling, reactions, and realtime conversation area.</p></div>
+      <div class="card"><h3>Community / Group View</h3><div class="screen"></div><p>Membership, moderation, invite, and announcement controls.</p></div>
+      <div class="card"><h3>Settings / Profile</h3><div class="screen"></div><p>Personal information, avatar, education, interests, and preferences.</p></div>
+    </div>
+    <div class="note">Replace these conceptual panels with actual screenshots if your college prefers implementation screenshots.</div>
+    <div class="footer"><span>Input Screen Designs</span><span>Page 20</span></div>
+  </section>
+
+  <section class="page">
+    <h2>Conclusion</h2>
+    <p>The Cohort project demonstrates a complete full-stack communication platform that combines realtime messaging, social organization, events, updates, and AI assistance into a single system.</p>
+    <div class="sp8"></div>
+    <p>From a learning perspective, the project provided practical exposure to React-based UI development, Node.js / Express API design, Socket.IO realtime workflows, MongoDB schema design, authentication, and documentation.</p>
+    <div class="sp8"></div>
+    <p>The architecture is modular enough for future improvements such as automated tests, deployment hardening, media enhancements, and stronger production call support.</p>
+    <div class="footer"><span>Conclusion</span><span>Page 21</span></div>
+  </section>
+
+  <section class="page">
+    <h2>Bibliography</h2>
+    <ol>
+      <li>React Documentation - https://react.dev</li>
+      <li>Vite Documentation - https://vite.dev</li>
+      <li>Express.js Documentation - https://expressjs.com</li>
+      <li>Socket.IO Documentation - https://socket.io/docs</li>
+      <li>MongoDB Documentation - https://www.mongodb.com/docs</li>
+      <li>Mongoose Documentation - https://mongoosejs.com/docs</li>
+      <li>Axios Documentation - https://axios-http.com</li>
+      <li>JWT Reference - https://jwt.io</li>
+      <li>Gemini API reference used for AI integration</li>
+      <li>Cohort project source files and project documentation from the codebase</li>
+    </ol>
+    <div class="footer"><span>Bibliography</span><span>Page 22</span></div>
+  </section>
+</body>
+</html>

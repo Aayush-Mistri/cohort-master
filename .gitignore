@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+cohortFront/node_modules/
+cohortBackEnd/node_modules/
+
+# Build outputs
+cohortFront/dist/
+cohortBackEnd/dist/
+coverage/
+
+# Environment files
+.env
+.env.*
+cohortFront/.env
+cohortBackEnd/.env
+
+# Runtime data
+cohortBackEnd/uploads/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
