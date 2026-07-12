@@ -55,7 +55,7 @@ npm install
 
 ### Configure Environment Variables
 
-Create a `.env` file inside the server folder.
+Create a `.env` file inside the `cohortbackend` folder.
 
 ```env
 PORT=5000
