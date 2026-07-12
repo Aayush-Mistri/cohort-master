@@ -51,6 +51,7 @@ npm install
 cd ..
 cd cohortbackend
 npm install
+```
 
 ### Configure Environment Variables
 
