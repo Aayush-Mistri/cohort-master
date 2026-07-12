@@ -107,10 +107,8 @@ Our goal is to create a developer-first community where members can:
 - [x] Real-time Chat
 - [x] Events & RSVP
 - [ ] Notifications
-- [ ] AI Assistant
-- [ ] Project Matching
-- [ ] Hackathon Leaderboard
-- [ ] Dark Mode
+- [x] AI Assistant
+- [x] Dark Mode
 
 ---
 
