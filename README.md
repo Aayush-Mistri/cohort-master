@@ -39,7 +39,7 @@ A full-stack community platform built for our cohort to collaborate, communicate
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/cohort-master.git
+git clone https://github.com/Aayush-Mistri/cohort-master.git
 cd cohort-master
 ```
 
@@ -55,7 +55,7 @@ npm install
 
 ### Configure Environment Variables
 
-Create a `.env` file inside the server folder.
+Create a `.env` file inside the `cohortbackend` folder.
 
 ```env
 PORT=5000
